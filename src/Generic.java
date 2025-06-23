@@ -1,17 +1,30 @@
-public class Generic<T,U> {
-    T objectT;
-    U objectU;
 
-    public Generic(T objectT,U objectU){
-   this.objectT =objectT;
-   this.objectU = objectU;
+
+class Generic<T, U>
+{
+    T obj1;
+    U obj2;
+
+    Generic(T obj1, U obj2){
+        this.obj1 = obj1;
+        this.obj2 = obj2;
     }
 
-    public T getObjectT(){
-        return objectT;
+    public T getObj1() {
+        return obj1;
     }
 
-    public U getObjectU(){
-        return  objectU;
+    public void setObj1(){
+        this.obj1 = obj1;
     }
+
+    public U getObj2() {
+        return obj2;
+    }
+
+    public void setObj2(U obj2) {
+        this.obj2 = obj2;
+    }
+
 }
+

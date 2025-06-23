@@ -1,9 +1,12 @@
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main( String args[]) {
 
-       Generic<Integer,String> obj =  new Generic(20,"Pima");
+        Generic<String, Integer> obj = new Generic<String, Integer>("Pima", 11);
+       obj.print();
+    }}
 
-     System.out.println(obj.getObjectT() + "  " +  obj.getObjectU());
 
-    }
-}
+
+
+
